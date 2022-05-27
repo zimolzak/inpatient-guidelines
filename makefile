@@ -1,6 +1,6 @@
 inpatient_guidelines.pdf : inpatient_guidelines.tex
-	pdflatex inpatient_guidelines.tex
-	pdflatex inpatient_guidelines.tex
+	pdflatex $<
+	pdflatex $<
 	rm -f *.aux *.log *.out
 
 .PHONY: clean
