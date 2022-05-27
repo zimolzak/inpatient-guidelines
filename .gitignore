@@ -1,6 +1,6 @@
 *.aux
 *.log
 *.out
-*.pdf
+inpatient_guidelines_latest.pdf
 *~
 .DS_Store

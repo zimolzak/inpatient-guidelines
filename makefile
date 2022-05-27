@@ -1,10 +1,14 @@
-inpatient_guidelines.pdf : inpatient_guidelines.tex
+files = inpatient_guidelines_latest.pdf
+
+.PHONY: clean all
+
+all: $(files)
+
+%.pdf : %.tex
 	pdflatex $<
 	pdflatex $<
 	rm -f *.aux *.log *.out
 
-.PHONY: clean
-
 clean:
-	rm -f inpatient_guidelines.pdf
+	rm -f $(files)
 	rm -f *.aux *.log *.out
